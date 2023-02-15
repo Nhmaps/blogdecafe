@@ -4,5 +4,186 @@
 /* Custom properties */
 :root {
   --fontP: "Open Sans", sans-serif;
-  --fontS: "PT Sans", sans-serif;
+  --fontHeading: "PT Sans", sans-serif;
+
+  --primaryColor: #784d3c;
+  --secondaryColor: #f5e6df;
+  --black: #000;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1rem = 10px*/
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--fontP);
+  font-size: 1.6rem;
+  line-height: 2;
+  text-align: center;
+}
+
+/* Globals */
+
+.container {
+  max-width: 120rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--fontHeading);
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+h4 {
+  font-size: 2.8rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Utilities */
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+/* Header */
+.header {
+  background-image: url(../img/banner.jpg);
+  height: 60rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.header__txt {
+  color: var(--secondaryColor);
+  margin-top: 5rem;
+}
+
+/* logo and nav-bar */
+.logo {
+  color: var(--secondaryColor);
+}
+
+.logo__name {
+  font-weight: 400;
+}
+
+.logo__bold {
+  font-weight: 700;
+}
+
+.nav-bar__a {
+  display: block;
+  font-size: 1.8rem;
+  color: var(--secondaryColor);
+}
+
+/* Entrada and btn */
+
+.entrada {
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: block;
+  font-family: var(--fontHeading);
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--secondaryColor);
+}
+
+.btn--primary {
+  background-color: var(--black);
+}
+.btn--secondary {
+  background-color: var(--primaryColor);
+}
+
+/* Cursos widget */
+.widget-curso {
+  margin-bottom: 3rem;
+}
+
+.widget-curso__label {
+  font-family: var(--fontHeading);
+  font-weight: 700;
+}
+
+.widget-curso__info {
+  font-weight: 400;
+}
+
+.widget-curso__info,
+.widget-curso__label {
+  font-size: 2rem;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--black);
+  padding: 1.2rem;
+  gap: 1rem;
+}
+
+/* Media Querys */
+@media (min-width: 768px) {
+  .bar,
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+  .header__txt {
+    margin-top: 15rem;
+  }
+  .contenido_principal {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+  }
+  .btn {
+    display: inline-block;
+  }
 }
