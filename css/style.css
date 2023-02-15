@@ -1,0 +1,8 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap");
+
+/* Custom properties */
+:root {
+  --fontP: "Open Sans", sans-serif;
+  --fontS: "PT Sans", sans-serif;
+}
