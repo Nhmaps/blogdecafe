@@ -143,17 +143,21 @@ img {
   margin-bottom: 3rem;
 }
 
-.widget-curso__label {
+.widget-curso__label,
+.curso__label {
   font-family: var(--fontHeading);
   font-weight: 700;
 }
 
-.widget-curso__info {
+.widget-curso__info,
+.curso__info {
   font-weight: 400;
 }
 
 .widget-curso__info,
-.widget-curso__label {
+.widget-curso__label,
+.curso__info,
+.curso__label {
   font-size: 2rem;
 }
 
@@ -185,5 +189,15 @@ img {
   }
   .btn {
     display: inline-block;
+  }
+  .sobre-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .curso {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2rem;
   }
 }
